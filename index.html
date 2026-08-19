@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#4a0e1a">
+  <meta name="description" content="श्री ज्येष्ठगौरी पूजन — सस्नेह आमंत्रण">
+  <title>श्री ज्येष्ठगौरी पूजन | सस्नेह आमंत्रण</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="particle p1"></span><span class="particle p2"></span><span class="particle p3"></span>
+    <span class="particle p4"></span><span class="particle p5"></span><span class="particle p6"></span>
+  </div>
+
+  <div id="youtube-player" class="youtube-player" aria-hidden="true"></div>
+
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="संगीत सुरू करा" title="संगीत">
+    <span class="music-icon">♫</span>
+    <span id="musicText">संगीत</span>
+  </button>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="mandala" aria-hidden="true"></div>
+      <div class="hero-inner reveal">
+        <p class="sanskrit">॥ श्री महालक्ष्म्यै नमः ॥</p>
+        <div class="hero-image-wrap">
+          <img id="heroDeity" src="assets/mahalakshmi.png" alt="महालक्ष्मी मातेचे चित्र">
+        </div>
+        <p class="eyebrow">सस्नेह आमंत्रण</p>
+        <h1 id="heroTitle">श्री ज्येष्ठगौरी पूजन</h1>
+        <p class="hero-date">१८ सप्टेंबर २०२६ · सायंकाळी ७.०० वाजता</p>
+        <button id="openInvitation" class="gold-btn" type="button">
+          <span>आमंत्रण पहा</span><span aria-hidden="true">↓</span>
+        </button>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">स्क्रोल करा</div>
+    </section>
+
+    <section class="section cream" id="welcome">
+      <div class="ornament">❈</div>
+      <p class="section-kicker">॥ मंगलमय निमंत्रण ॥</p>
+      <h2>आपले मनःपूर्वक स्वागत</h2>
+      <p id="invitationMessage" class="invitation-text"></p>
+      <div class="gold-divider"><span>✦</span></div>
+    </section>
+
+    <section class="section family" id="family">
+      <p class="section-kicker">कुटुंबीयांकडून</p>
+      <h2>सस्नेह आमंत्रक</h2>
+      <div id="familyGrid" class="family-grid"></div>
+    </section>
+
+    <section class="section mahalaxmi" id="mahalaxmi">
+      <div class="section-heading light">
+        <p class="section-kicker">मंगल दर्शन</p>
+        <h2>महालक्ष्मी</h2>
+        <p>महालक्ष्मी मातेच्या मंगलमय दर्शनाने आपल्या जीवनात सुख, समृद्धी आणि सौभाग्य नांदो.</p>
+      </div>
+      <div id="mahalaxmiGallery" class="mahalaxmi-gallery"></div>
+    </section>
+
+    <section class="section cream" id="program">
+      <p class="section-kicker">दिनक्रम</p>
+      <h2>कार्यक्रम</h2>
+      <div id="programList" class="timeline"></div>
+    </section>
+
+    <section class="section venue" id="venue">
+      <div class="venue-card">
+        <div class="venue-icon">⌖</div>
+        <p class="section-kicker">आयोजन स्थळ</p>
+        <h2 id="venueName"></h2>
+        <p id="address"></p>
+        <a id="mapsLink" class="gold-btn outline" href="#" target="_blank" rel="noopener">Google Maps वर मार्ग पहा</a>
+      </div>
+    </section>
+
+    <section class="section cream gallery-section" id="gallery">
+      <p class="section-kicker">आठवणी</p>
+      <h2>मंगल क्षण</h2>
+      <div id="galleryGrid" class="gallery-grid"></div>
+      <p class="gallery-note">फोटोवर टॅप करून मोठ्या आकारात पहा.</p>
+    </section>
+
+    <section class="section closing">
+      <div class="closing-card">
+        <div class="lotus">❀</div>
+        <p class="sanskrit">॥ श्री महालक्ष्म्यै नमः ॥</p>
+        <h2>आपली उपस्थिती<br>हा आमच्यासाठी आशीर्वादच आहे.</h2>
+        <p class="closing-line">सपरिवार अवश्य यावे. 🙏</p>
+        <div class="gold-divider"><span>✦</span></div>
+        <div id="closingNames" class="closing-names"></div>
+      </div>
+    </section>
+
+    <footer>॥ श्री महालक्ष्म्यै नमः ॥<br><span>शुभं भवतु</span></footer>
+  </main>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button id="closeLightbox" class="close-lightbox" type="button" aria-label="फोटो बंद करा">×</button>
+    <img id="lightboxImage" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
